@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+li {
+    list-style-type: none;
+  }
+
+
+header {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #000;
+    height: 75px;
+    width: 100%;
+    padding: 0 20px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+   
+
+}
+
+li , a {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+a { 
+    color: inherit;
+ } 
+
+ .logo{
+    width: 30px;
+    cursor: pointer;
+}
+
+ .menu a {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.menu a:hover,
+.menu a.selected {
+    text-decoration: none;
+}
+
+.menu a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.menu a:hover:after,
+.menu a.selected:after {
+    width: 100%;
+}
+
+
+.menu{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+ 
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    
+}
+
+.principalPage{
+    display: flex;
+}
+
+.texto{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 600px;
+}  
+
+.texto h1{
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.texto p{
+    font-size: 1.4em;
+}
+
+.texto a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px; 
+    background-color: rgb(73, 90, 42); 
+    color: #fff; 
+    text-decoration: none;
+    font-size: 1.4em;
+    border-radius: 5px;
+}
+
+.texto a:hover {
+    background-color: #4e0d0d; 
+}
+
+.texto span{
+    font-size: 1.2em;
+    color: rgb(73, 90, 42);
+}
+
+
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background: #000;
+    min-width: 1200px;
+    padding: 50px 20px;
+    color: white;
+}
+
+.rodapeLogo{
+    width: 200px;
+    object-fit: contain;
+}
+
+.rodapeLinks {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+}
+
+.rodapeSocial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
