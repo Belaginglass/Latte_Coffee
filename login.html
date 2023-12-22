@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Página de Login</title>
+</head>
+
+<body>
+    <header>
+        <div> <a href="index.html" class="logo" ><img src="imagens/logo/LogoBlack.png" alt="logo"> </a></div>
+        <button class="buttonVoltar" onclick="goToHomePage()">Voltar para Página Inicial</button>
+     </header>
+    <div class="login-container">
+        <div class="login-form" id="loginForm">
+          <form action="#" method="post" class="form-group">
+            <label for="login-username">Usuário:</label>
+            <input type="text" id="login-username" name="login-username" required>
+    
+            <label for="login-password">Senha:</label>
+            <input type="password" id="login-password" name="login-password" required>
+    
+            <button type="submit">Entrar</button>
+          </form>
+    
+          <p>Não tem cadastro? <a href="#" onclick="showRegisterForm()">Cadastrar</a></p>
+        </div>
+    
+        <div class="register-form" id="registerForm">
+          <form action="#" method="post" class="form-group">
+            <label for="register-username">Usuário:</label>
+            <input type="text" id="register-username" name="register-username" required>
+    
+            <label for="register-password">Senha:</label>
+            <input type="password" id="register-password" name="register-password" required>
+    
+            <button type="submit">Cadastrar</button>
+          </form>
+    
+          <p>Já tem cadastro? <a href="#" onclick="showLoginForm()">Login</a></p>
+        </div>
+      </div>
+    <footer>
+        <p>Café Latte © 2023</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
